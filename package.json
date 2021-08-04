@@ -2,7 +2,7 @@
   "name": "my-progen-project",
   "repository": {
     "type": "git",
-    "url": "https://github.com/user/my-progen-project.git"
+    "url": "https://github.com/hasanaburayyan/my-progen-project.git"
   },
   "scripts": {
     "clobber": "npx projen clobber",
@@ -22,21 +22,23 @@
     "eslint": "npx projen eslint",
     "compat": "npx projen compat",
     "publish:npm": "npx projen publish:npm",
+    "publish:pypi": "npx projen publish:pypi",
     "docgen": "npx projen docgen",
     "release": "npx projen release",
     "projen": "npx projen"
   },
   "author": {
-    "name": "user",
-    "email": "user@domain.com",
+    "name": "Hasan Abu-Rayyn",
+    "email": "hasanaburayyan21@gmail.com",
     "organization": false
   },
   "devDependencies": {
-    "@aws-cdk/assert": "^1.95.2",
+    "@aws-cdk/assert": "^1.116.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^10.17.0",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
+    "aws-sdk": "^2.959.0",
     "eslint": "^7.32.0",
     "eslint-import-resolver-node": "^0.3.4",
     "eslint-import-resolver-typescript": "^2.4.0",
@@ -55,7 +57,13 @@
     "typescript": "^4.3.5"
   },
   "peerDependencies": {
+    "@aws-cdk/aws-s3": "^1.116.0",
+    "@aws-cdk/core": "^1.116.0",
     "constructs": "^3.2.27"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-s3": "^1.116.0",
+    "@aws-cdk/core": "^1.116.0"
   },
   "bundledDependencies": [],
   "keywords": [
@@ -107,7 +115,12 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {},
+    "targets": {
+      "python": {
+        "distName": "cdk-hasan",
+        "module": "cdk_hasan"
+      }
+    },
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"
