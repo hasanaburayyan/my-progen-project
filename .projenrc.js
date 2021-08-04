@@ -16,8 +16,8 @@ const project = new AwsCdkConstructLibrary({
   publishToPypi: {
     distName: 'cdk-hasan',
     module: 'cdk_hasan',
-    twinePasswordSecret: 'hasanaburayyan',
-    twineUsernameSecret: 'Kaseylucy2',
+    twinePasswordSecret: 'TWINE_USERNAME',
+    twineUsernameSecret: 'TWINE_PASSWORD',
   },
   // publishToMaven: {
   //   mavenGroupId: 'com.github.hasanaburayyan',
