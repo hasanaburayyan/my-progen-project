@@ -79,7 +79,7 @@ jobs:
       - name: Release
         run: npx -p jsii-release@latest jsii-release-pypi
         env:
-          TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
-          TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
+          TWINE_USERNAME: ${{ secrets.hasanaburayyan }}
+          TWINE_PASSWORD: ${{ secrets.hasanaburayyan }}
     container:
       image: jsii/superchain
