@@ -4,7 +4,7 @@
 
 ### MyS3Construct <a name="my-progen-project.MyS3Construct"></a>
 
-#### Initializer <a name="my-progen-project.MyS3Construct.Initializer"></a>
+#### Initializers <a name="my-progen-project.MyS3Construct.Initializer"></a>
 
 ```typescript
 import { MyS3Construct } from 'my-progen-project'
@@ -30,7 +30,7 @@ new MyS3Construct(scope: Construct, id: string)
 
 ### S3Stack <a name="my-progen-project.S3Stack"></a>
 
-#### Initializer <a name="my-progen-project.S3Stack.Initializer"></a>
+#### Initializers <a name="my-progen-project.S3Stack.Initializer"></a>
 
 ```typescript
 import { S3Stack } from 'my-progen-project'
